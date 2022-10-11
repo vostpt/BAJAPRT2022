@@ -82,43 +82,7 @@ app.layout = html.Div(
                 ),
             ],
         ),
-        dmc.Grid(
-            children=[
-
-                dmc.Col(
-                    dmc.Select(
-                                id="dropdown_district",
-                                data=[
-                                    {"label": i, "value": i}
-                                    for i in df_in_2022['district'].unique()
-                                ],
-                                searchable=True,
-                                clearable=True,
-                                label='Distrito',
-                                required=True,
-                                value="Aveiro",
-                                nothingFound="Esse Distrito Não Existe"
-                            ),
-                span=6,    
-                ),
-                dmc.Col(
-                    dmc.Select(
-                                id="dropdown_county",
-                                data=[
-                                    {"label": i, "value": i}
-                                    for i in df_in_2022['concelho'].unique()
-                                ],
-                                searchable=True,
-                                clearable=True,
-                                label='Concelho',
-                                value="Aveiro",
-                                required=True,
-                                nothingFound="Esse Concelho Não Existe"
-                            ),
-                span=6,    
-                ),
-            ],            
-        ),   
+           
     ],
 )
 
@@ -127,6 +91,6 @@ app.layout = html.Div(
 # -------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    app.run_server(host='0.0.0.0', debug=True)
+    app.run_server(host='0.0.0.0', debug=False)
 
 
