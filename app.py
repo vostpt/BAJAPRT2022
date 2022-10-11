@@ -7,7 +7,7 @@
 
 # V 0.1 11 OCTOBER 2022 
 
-# BAJA PORTALEGRE - BOILERPLATE 
+# BAJA PORTALEGRE - BOILERPLATE ONLY
 
 # ------------------------------
 #       IMPORT LIBRARIES
